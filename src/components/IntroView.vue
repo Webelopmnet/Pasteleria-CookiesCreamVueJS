@@ -5,19 +5,29 @@
       <table class="pasteles">
         <tr>
           <th>
-            <a href="#informacion"><img src="@/assets/P.Chocolate.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/P.Chocolate.jpg"
+            /></a>
           </th>
           <th>
-            <a href="#informacion"><img src="@/assets/P.Vainilla.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/P.Vainilla.jpg"
+            /></a>
           </th>
           <th>
-            <a href="#informacion"><img src="@/assets/P.Nuez.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/P.Nuez.jpg"
+            /></a>
           </th>
           <th>
-            <a href="#informacion"><img src="@/assets/P.Zanahoria.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/P.Zanahoria.jpg"
+            /></a>
           </th>
           <th>
-            <a href="#informacion"><img src="@/assets/P.Naranja.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/P.Naranja.jpg"
+            /></a>
           </th>
         </tr>
       </table>
@@ -28,19 +38,29 @@
       <table class="decoraciones">
         <tr>
           <th>
-            <a href="#informacion"><img src="@/assets/D.Naked.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/D.Naked.jpg"
+            /></a>
           </th>
           <th>
-            <a href="#informacion"><img src="@/assets/D.Fondant.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/D.Fondant.jpg"
+            /></a>
           </th>
           <th>
-            <a href="#informacion"><img src="@/assets/D.Buttercream.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/D.Buttercream.jpg"
+            /></a>
           </th>
           <th>
-            <a href="#informacion"><img src="@/assets/D.Praline.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/D.Praline.jpg"
+            /></a>
           </th>
           <th>
-            <a href="#informacion"><img src="@/assets/D.DripCake.jpg" /></a>
+            <a href="#informacion" @click.prevent="scrollToInfo"
+              ><img src="@/assets/D.DripCake.jpg"
+            /></a>
           </th>
         </tr>
       </table>
@@ -51,6 +71,14 @@
 <script>
 export default {
   name: "IntroView",
+  methods: {
+    scrollToInfo() {
+      const infoSection = document.getElementById("informacion");
+      if (infoSection) {
+        infoSection.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  },
 };
 </script>
 

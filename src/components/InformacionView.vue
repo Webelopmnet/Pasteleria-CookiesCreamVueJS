@@ -5,70 +5,70 @@
         <img
           src="@/assets/P.Chocolate.jpg"
           alt="Pastel Chocolate"
-          @click="mostrarTexto(1)"
+          @click.prevent="mostrarTexto(1)"
         />
       </a>
       <a href="#informacion-2">
         <img
           src="@/assets/P.Vainilla.jpg"
           alt="Pastel Vainilla"
-          @click="mostrarTexto(2)"
+          @click.prevent="mostrarTexto(2)"
         /> </a
       ><br />
       <a href="#informacion-3">
         <img
           src="@/assets/P.Nuez.jpg"
           alt="Pastel Nuez"
-          @click="mostrarTexto(3)"
+          @click.prevent="mostrarTexto(3)"
         />
       </a>
       <a href="#informacion-4">
         <img
           src="@/assets/P.Zanahoria.jpg"
           alt="Pastel Zanahoria"
-          @click="mostrarTexto(4)"
+          @click.prevent="mostrarTexto(4)"
         /> </a
       ><br />
       <a href="#informacion-5">
         <img
           src="@/assets/P.Naranja.jpg"
           alt="Pastel Naranja"
-          @click="mostrarTexto(5)"
+          @click.prevent="mostrarTexto(5)"
         />
       </a>
       <a href="#informacion-6">
         <img
           src="@/assets/D.Naked.jpg"
           alt="Naked"
-          @click="mostrarTexto(6)"
+          @click.prevent="mostrarTexto(6)"
         /> </a
       ><br />
       <a href="#informacion-7">
         <img
           src="@/assets/D.Fondant.jpg"
           alt="Fondant"
-          @click="mostrarTexto(7)"
+          @click.prevent="mostrarTexto(7)"
         />
       </a>
       <a href="#informacion-8">
         <img
           src="@/assets/D.Buttercream.jpg"
           alt="Buttercream"
-          @click="mostrarTexto(8)"
+          @click.prevent="mostrarTexto(8)"
         /> </a
       ><br />
       <a href="#informacion-9">
         <img
           src="@/assets/D.Praline.jpg"
           alt="Praline"
-          @click="mostrarTexto(9)"
+          @click.prevent="mostrarTexto(9)"
         />
       </a>
       <a href="#informacion-10">
         <img
           src="@/assets/D.DripCake.jpg"
           alt="DripCake"
-          @click="mostrarTexto(10)"
+          @click.prevent="mostrarTexto(10)"
         />
       </a>
     </aside>
